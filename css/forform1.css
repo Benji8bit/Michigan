@@ -1,0 +1,36 @@
+body {
+    background-color: cornsilk;
+}
+
+h2 {
+    color: darkred;
+}
+
+#description {
+    font-family: Elephant;
+    text-align: center;
+}
+
+img {
+    float: left;
+    clear: left;
+    padding: 10px;
+}
+
+legend {
+    font-family: Elephant;
+    color: darkred;
+}
+
+p.pfooter {
+    font-weight: bold;
+    font-family: Elephant;
+    font-size: 200%;
+    text-align: center;
+}
+
+#links {
+    font-family: Elephant;
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,53 @@
+body {
+    background-color: lightgrey;
+}
+
+div {
+    background-color: darkseagreen;
+    text-align: center;
+}
+
+h3 {
+    color: indigo;
+    font-size: 200%;
+}
+
+img {
+    float: left;
+    clear: left;
+    padding: 10px;
+}
+
+#table_header {
+    font-weight: bold;
+    font-family: bold;
+    font-size: 120%;
+}
+
+table {
+    background-color: thistle;
+    border: 2px solid midnightblue;
+    text-align: center;
+    padding: 1px;
+}
+
+td {
+    padding: 2px;
+}
+
+thead {
+    border: 5px solid black;
+}
+
+tfoot {
+    font-weight: bold;
+    font-family: bold;
+    border: 5px solid black;
+}
+
+p.pfooter {
+    font-weight: bold;
+    font-family: "Bookman Old Style";
+    font-size: 200%;
+    text-align: center;
+}
