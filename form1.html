@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Form</title>
+    <link rel="stylesheet" typeof="text/css" href="css/forform1.css">
+
+    <script type="text/javascript">
+        function TextName() // User's name checking
+        {
+            var name = document.getElementById("name").value;
+            var regex1 = /^[a-zA-Z\s\'\-']{2,20}$/;
+            /*The regular expression checks that the name consists of
+            lowercase and uppercase letters, a hyphen and a single quote.*/
+
+            if (regex1.test(name)) {
+                document.getElementById("message1").style.color = "green";
+                document.getElementById("message1").innerHTML = "Good name!";
+                return true;
+            } else {
+                document.getElementById("message1").style.color = "Red";
+                document.getElementById("message1").innerHTML = "Please, enter your name (2-20 chars).";
+                return false;
+            }
+        }
+
+        function TextEmail() // User/s email checking
+        {
+                var email = document.getElementById("email").value;
+                var regex2 = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                /* The regular expression checks that the email consists of
+                lowercase and uppercase letters, a hyphen and @-symbol in a certain format. */
+
+                if (regex2.test(email)) {
+                    document.getElementById("message2").style.color = "green";
+                    document.getElementById("message2").innerHTML = "Email accepted!";
+                    return true;
+                }
+                else {
+                    document.getElementById("message2").style.color = "Red";
+                    document.getElementById("message2").innerHTML = "Please, enter your email (like a \"imhacker@blackhat.org\")";
+                    return false;
+                }
+        }
+    </script>
+</head>
+<body>
+    <h2>Cyclist's Club Webpage</h2>
+    <p id="description"> This page was created for a future site that will unite cyclists from all over the world.
+        We plan to talk about the history of bicycles and cycling and share cycling photos from all corners of the Earth.
+        Maybe someday the first photo of cycling on other planets will appear here!</p>
+    <img src="images/old_bicycle_shop.jpg" alt="Old shop">
+    <form action="#" method="get">
+        <fieldset>
+            <legend>
+                User's Information
+            </legend>
+            <label>
+                Name:
+                <input id="name" type="text" name="name" size="30" maxlength="100" onblur="TextName();"> <span id="message1"></span>
+            </label>
+            <!--This input of user's name will be validated by JavaScript somewhere above-->
+            <br />
+            <br />
+            <label>
+                Email:
+                <input id="email" type="email" name="email" size="30" maxlength="100" onblur="TextEmail();"> <span id="message2"></span>
+            </label>
+            <!--This input of user's email will be validated by JavaScript somewhere above-->
+            <br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Cycling:
+            </legend>
+            <p>
+                <label for="how-long">
+                    How long have you been cycling?
+                </label>
+                <select name="duration" id="how-long">
+                    <option value="newbie">I'm newbie!</option>
+                    <option value="1-5 years">1-5 years</option>
+                    <option value="5-10 years">5-10 years</option>
+                    <option value="over15">Over 15 years</option>
+                </select>
+            </p>
+            <p>
+                What's your favorite type of bicycle?
+                <br />
+                <label>
+                    <input type="radio" name="type" value="MTB" />
+                    MTB
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="type" value="Touring/Adventurer" checked="checked"/>
+                    Touring/Adventurer
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="type" value="Gravel/Cyclocross" />
+                    Gravel/Cyclocross
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="type" value="Roadbike" />
+                    Roadbike
+                </label>
+                <br />
+                <label>
+                    <input type="radio" name="type" value="Comfort bike" />
+                    Comfort bike
+                </label>
+                <br />
+            </p>
+            <p>
+                Why do you love cycling? (you can choose multiple options)
+                <br />
+                <label>
+                    <input type="checkbox" name="lovefor" value="workout" checked="checked" />
+                    Workout
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="lovefor" value="speed" />
+                    Speed
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="lovefor" value="nature" />
+                    Nature cycling
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="lovefor" value="trails" />
+                    Dirty trails)
+                </label>
+                <br />
+            </p>
+            <br />
+            <p>
+                <label for="comments">
+                    Your comment about this page:
+                </label>
+                <br />
+                <textarea rows="5" cols="40" placeholder="Your opinion" id="comments">
+
+                </textarea>
+            </p>
+        </fieldset>
+        <br />
+        <button> <img src="images/bike_silhouette.png" alt="takealook" width="20" height="25" />
+            Take a look at the bike</button>
+    </form>
+    <footer>
+        <div id="links">
+            <a href="workout0522.html">My workout</a>
+            <a href="aboutme.html">Some facts about me</a>
+        </div>
+        <p class="pfooter">Just do it!</p>
+    </footer>
+</body>
+</html>
