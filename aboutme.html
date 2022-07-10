@@ -3,6 +3,7 @@
 <meta charset="UTF-8">
 <head>
     <title>About me</title>
+    <link rel="stylesheet" href="css/together3.css">
 </head>
 <body>
 <main>
@@ -17,9 +18,10 @@
     <br>
     </header>
 
-    <img src="https://cdn.pixabay.com/photo/2015/03/21/14/34/silhouette-683751__340.jpg" width="250"
+    <img class="half" src="images/cyclist_silhouette.jpg"
          alt = "My cycle)"/>
 
+    <section class="half">
     <h2>Favorite Foods</h2>
     <ul>
         <li>Bananas</li>
@@ -27,7 +29,9 @@
         <li>Crab</li>
         <li>Vegetables</li>
     </ul>
+    </section>
 
+    <section class="half">
     <h2>Achievements</h2>
     <label for="Progress in this course">Progress in this course (100%)</label>
     <progress id="Progress in this course" value="100" max="100">100%</progress>
@@ -38,20 +42,27 @@
     <label for="Progress in cycling">Progress in cycling (15%)</label>
     <progress id="Progress in cycling" value="15" max="100">15%</progress>
     <br>
+    </section>
 
+    <section class="whole">
     <h2>More about me</h2>
     <details>
         <summary>My hobby</summary>
         <p>I love my bicycle and cycling. In May, I rode 1,535 kilometers on a bicycle with great pleasure.</p>
     </details>
+    </section>
 
     <br>
 </main>
 <footer>
-    <a href="http://intro-webdesign.com"><img src="https://www.intro-webdesign.com/images/newlogo.png" width="120"
-                                              alt = "WD4E"/></a>
-    <p>This page was created by Maxim Kuzin & Colleen van Lent.
-        To learn more about web design, visit <a href = "http://intro-webdesign.com">Intro to Web Design</a></p>
+    <p>
+        <a href="http://intro-webdesign.com">
+            <img id="wd4eimage" src="https://www.intro-webdesign.com/images/newlogo.png"
+                                                 width="120" alt = "WD4E"/></a>
+        This page was created by <span id="name">Maxim Kuzin & Colleen van Lent</span>.
+        To learn more about web design, visit
+        <a href = "http://intro-webdesign.com">Intro to Web Design</a>
+    </p>
 </footer>
 </body>
 </html>

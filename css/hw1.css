@@ -1,0 +1,158 @@
+table {
+    background-color: papayawhip;
+    color: maroon;
+    border: 2px solid maroon;
+    border-spacing: 1px;
+    border-radius: 20px 20px 0px 0px;
+    font-family: Arial, Verdana, serif;
+    font-size: 20px;
+    line-height: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+th {
+    padding: 0.3em;
+    text-align: center;
+    text-shadow: -1px -1px 1px maroon;
+    letter-spacing: 0.1em;
+    background: -webkit-linear-gradient(aliceblue, plum);
+    background: -moz-linear-gradient(aliceblue, plum);
+    background: -o-linear-gradient(aliceblue, plum);
+    background: linear-gradient(aliceblue, plum);
+    border: 1px solid maroon;
+    border-bottom: 3px solid maroon;
+}
+
+th:first-child {
+    border-radius: 20px 0px 0px 0px;
+}
+
+th:last-child {
+    border-radius: 0px 20px 0px 0px;
+}
+
+tr:nth-child(odd) {
+    background: #f9ff83;
+}
+
+tr:nth-child(even) {
+    background: #bdffee;
+}
+
+tr:first-child {
+    border: 2px solid maroon;
+    border-radius: 20px 20px 0px 0px;
+}
+
+tr {
+    opacity: 0.75;
+}
+
+tr:hover {
+    opacity: 1;
+}
+
+td {
+    text-align: center;
+    padding: 0.3em;
+    border: 1px solid maroon;
+    border-radius: 2px;
+}
+
+td:first-child, th:first-child {
+    text-align: left;
+}
+
+body {
+    padding: 2%;
+    margin: 2%;
+}
+
+header {
+    background: url("../images/flywheel.jpg") no-repeat fixed;
+    background-size: cover;
+    background-color: #96ff9c;
+    padding: 2%;
+    border-style: double;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 250%;
+}
+
+nav {
+    background-color: #96ff9c;
+    text-align: center;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0.3em;
+    opacity: 0.95;
+}
+
+nav a {
+    width: 22%;
+    display: inline-block;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    background: whitesmoke;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: magenta;
+}
+
+a.active {
+    background: yellow;
+}
+
+a:hover {
+    border: 1px solid gray;
+    background-color: lemonchiffon;
+}
+
+aside.left {
+    display: inline-block;
+    margin: 10px 0;
+    float: left;
+    clear: left;
+    width: 24%;
+}
+
+img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    border: double;
+    background-color: #96ff9c;
+}
+
+section.right {
+    width: 68%;
+    float: right;
+    clear: right;
+    background-color: #96ff9c;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 1em;
+    border-style: ridge;
+    text-align: justify;
+    font-size: 125%;
+}
+
+h2 {
+    color: #2496ff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+p {
+    font-family: "Times New Roman", sans-serif;
+}

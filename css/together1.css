@@ -1,0 +1,54 @@
+h1 {
+    background: lightskyblue;
+    color: darkred;
+    font-family: "Bauhaus 93", Elephant;
+}
+
+header {
+    background: lightskyblue;
+    text-align:center;
+}
+
+img {
+    float: left;
+    clear: left;
+    padding: 30px;
+}
+
+nav {
+    font-variant: full-width;
+    font-size: 110%;
+    font-family: "Bauhaus 93";
+}
+
+h2 {
+    background: lightskyblue;
+    color: darkred;
+    font-family: "Bauhaus 93";
+}
+
+details {
+    font-style: italic;
+}
+
+summary {
+    font-style: normal;
+}
+
+footer {
+    background: lightskyblue;
+    text-align:center;
+}
+
+a {
+    float: top;
+}
+
+#name {
+    text-transform: capitalize;
+}
+
+#wd4eimage {
+    float: bottom;
+    clear: bottom;
+}
